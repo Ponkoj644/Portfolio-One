@@ -4,7 +4,7 @@ const Header = () => {
   // Sticky Header Function //
   const headerRef = useRef(null);
   const menuRef = useRef(null);
-  const stickyHeaderFunc = () => { 
+  const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
       if (
         document.body.scrollTop > 80 ||
@@ -32,7 +32,7 @@ const Header = () => {
     window.scrollTo({
       top: location - 80,
       left: 0,
-    }); 
+    });
   };
 
   const toggleMenu = () => menuRef.current.classList.toggle("show-menu");
